@@ -6,10 +6,13 @@
 
 var buttonTranslate = document.querySelector("#btn-translate")
 var textInput = document.querySelector("#txt-input")
+var outputDiv = document.querySelector("#output-text")
 
 // console.log(buttonTranslate); 
 
 buttonTranslate.addEventListener("click", function clickEventHandler(){
-    console.log("clicked")
-    console.log("input", textInput.value);
+    // console.log("clicked")
+    // console.log("input", textInput.value);
+
+    outputDiv.innerText = textInput.value; 
 })
