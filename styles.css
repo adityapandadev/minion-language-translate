@@ -87,3 +87,30 @@ textarea{
     font-weight: bolder;
     margin: 1rem 0rem;
 }
+
+.footer{
+
+    padding: 1rem;
+    background-color:var(--main-yellow);
+    
+    
+    
+}
+
+.footer div{
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover{
+    color: white;
+}
