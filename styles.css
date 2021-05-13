@@ -60,6 +60,9 @@ textarea{
     color: white;
 }
 
+#btn-translate:focus{
+    outline: 0px;
+}
 
 .header{
     background-color: var(--main-yellow);
@@ -67,12 +70,13 @@ textarea{
     padding: .5rem;
     text-align: center;
     color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .header h1{
     font-family: "Itim","Cursive";
     color: var(--dark-yellow);
+    font-size: 2.5rem;
 }
 
 .container-center{
@@ -113,4 +117,14 @@ textarea{
 
 .footer a:hover{
     color: white;
+}
+
+.min-gif{
+    padding: 1rem;
+    text-align: center;
+}
+
+.min-gif img{
+    height: 10rem;
+    width: 10rem;
 }
