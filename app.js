@@ -7,22 +7,33 @@
 var buttonTranslate = document.querySelector("#btn-translate")
 var textInput = document.querySelector("#txt-input")
 var outputDiv = document.querySelector("#output-text")
-var servUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+// var servUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+
+var servUrl = "https://api.funtranslations.com/translate/minion.json"
 // console.log(buttonTranslate); 
 
 function getTranslateUrl(text){
       return servUrl + "?text=" + text
 }
 
+function errorHandler(error){
+      console.log("error occured",error)
+      alert("Something Wrong with the server please try again after sometime")
+}
+
 buttonTranslate.addEventListener("click", function clickEventHandler(){
     // console.log("clicked")
     // console.log("input", textInput.value);
 
-    // outputDiv.innerText = textInput.value; 
+//     outputDiv.innerText = textInput.value; 
 
     var inputText = textInput.value
     fetch(getTranslateUrl(inputText))
          .then(response => response.json())
-         .then(json => console.log(json.contents.translated))
+         .then(json => {
+               var translatedText = json.contents.translated;
+               outputDiv.innerText = translatedText;
+         })
+         .catch(errorHandler)
 
 })
