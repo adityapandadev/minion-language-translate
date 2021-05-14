@@ -18,7 +18,7 @@ function getTranslateUrl(text){
 
 function errorHandler(error){
       console.log("error occured",error)
-      alert("Something Wrong with the server please try again after sometime")
+      alert("Something might be Wrong with the server or Translation limit has reached please try again after one Hour!!!")
 }
 
 buttonTranslate.addEventListener("click", function clickEventHandler(){
