@@ -1,6 +1,6 @@
 # Minion Bhasa
 
-Minion bhasa is a website which allows you to translate your normal english texts to minions banaba language.
+Minion bhasa is a website which allows you to translate your normal english texts to minions banana language.
 
 Check it out here [Minion Bhasa](https://minion-bhasa.netlify.app)
 
